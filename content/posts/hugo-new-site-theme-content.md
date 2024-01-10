@@ -1,5 +1,5 @@
 +++
-title = 'hugo new site theme content'
+title = 'hugo new site, theme, content'
 date = 2024-01-10T20:38:58+07:00
 draft = false
 tags = ['hugo']
