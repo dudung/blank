@@ -215,3 +215,24 @@ To https://github.com/dudung/blank
 7. Commit changes... --> Commit changes
 8. https://github.com/dudung/blank
 9. https://dudung.github.io/blank/
+
+
+## git
+```
+$ git pull
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 5 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (5/5), 1.66 KiB | 284.00 KiB/s, done.
+From https://github.com/dudung/blank
+   fe64fb3..ca9f9bb  main       -> origin/main
+Merge made by the 'ort' strategy.
+ .github/workflows/hugo.yml | 75 ++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 75 insertions(+)
+ create mode 100644 .github/workflows/hugo.yml
+```
+
+```
+
+```
