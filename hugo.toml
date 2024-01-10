@@ -1,0 +1,6 @@
+baseURL = 'https://dudung.github.io/blank'
+languageCode = 'en-us'
+title = 'blank'
+theme = 'default'
+
+
