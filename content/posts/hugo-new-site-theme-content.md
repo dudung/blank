@@ -234,5 +234,19 @@ Merge made by the 'ort' strategy.
 ```
 
 ```
+$ git commit -a -m "update the post"
+warning: in the working copy of 'content/posts/hugo-new-site-theme-content.md', LF will be replaced by CRLF the next time Git touches it
+[main 20be65f] update the post
+ 1 file changed, 21 insertions(+)
 
+$ git push
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 668 bytes | 668.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/dudung/blank
+   a7a95c7..20be65f  main -> main
 ```
