@@ -212,7 +212,7 @@ To https://github.com/dudung/blank
 4. Source --> GitHub Actions
 5. Browse all workflows --> https://github.com/dudung/blank/actions/new
 6. Pages --> Hugo --> Configure
-7. Commit changes... --> Commit changes
+7. hugo.yml --> Commit changes... --> Commit changes
 8. https://github.com/dudung/blank
 9. https://dudung.github.io/blank/
 
