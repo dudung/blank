@@ -206,3 +206,12 @@ To https://github.com/dudung/blank
 ```
 
 ## visit repo
+1. https://github.com/dudung/blank
+2. https://github.com/dudung/blank/settings
+3. https://github.com/dudung/blank/settings/pages
+4. Source --> GitHub Actions
+5. Browse all workflows --> https://github.com/dudung/blank/actions/new
+6. Pages --> Hugo --> Configure
+7. Commit changes... --> Commit changes
+8. https://github.com/dudung/blank
+9. https://dudung.github.io/blank/
