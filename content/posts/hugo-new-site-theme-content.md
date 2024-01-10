@@ -116,3 +116,93 @@ Running in Fast Render Mode. For full rebuilds on change: hugo server --disableF
 Web Server is available at http://localhost:1313/blank/ (bind address 127.0.0.1)
 Press Ctrl+C to stop
 ```
+
+
+## commit changes
+```
+$ cd blank
+
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .hugo_build.lock
+        archetypes/
+        content/
+        hugo.toml
+        themes/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+$ git add .
+warning: in the working copy of 'archetypes/default.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'content/posts/hugo-new-site-theme-content.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'hugo.toml', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'themes/default/LICENSE', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'themes/default/README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'themes/default/archetypes/default.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'themes/default/assets/css/main.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'themes/default/assets/js/main.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'themes/default/hugo.toml', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'themes/default/layouts/_default/baseof.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'themes/default/layouts/_default/home.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'themes/default/layouts/_default/list.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'themes/default/layouts/_default/single.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'themes/default/layouts/partials/footer.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'themes/default/layouts/partials/head.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'themes/default/layouts/partials/head/css.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'themes/default/layouts/partials/head/js.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'themes/default/layouts/partials/header.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'themes/default/layouts/partials/menu.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'themes/default/layouts/partials/terms.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'themes/default/theme.toml', LF will be replaced by CRLF the next time Git touches it
+
+$ git commit -a -m "new files and folders"
+[main 5e8c91a] new files and folders
+ 23 files changed, 378 insertions(+)
+ create mode 100644 .hugo_build.lock
+ create mode 100644 archetypes/default.md
+ create mode 100644 content/posts/hugo-new-site-theme-content.md
+ create mode 100644 hugo.toml
+ create mode 100644 themes/default/LICENSE
+ create mode 100644 themes/default/README.md
+ create mode 100644 themes/default/archetypes/default.md
+ create mode 100644 themes/default/assets/css/main.css
+ create mode 100644 themes/default/assets/js/main.js
+ create mode 100644 themes/default/hugo.toml
+ create mode 100644 themes/default/layouts/_default/baseof.html
+ create mode 100644 themes/default/layouts/_default/home.html
+ create mode 100644 themes/default/layouts/_default/list.html
+ create mode 100644 themes/default/layouts/_default/single.html
+ create mode 100644 themes/default/layouts/partials/footer.html
+ create mode 100644 themes/default/layouts/partials/head.html
+ create mode 100644 themes/default/layouts/partials/head/css.html
+ create mode 100644 themes/default/layouts/partials/head/js.html
+ create mode 100644 themes/default/layouts/partials/header.html
+ create mode 100644 themes/default/layouts/partials/menu.html
+ create mode 100644 themes/default/layouts/partials/terms.html
+ create mode 100644 themes/default/static/favicon.ico
+ create mode 100644 themes/default/theme.toml
+ 
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+$ git push
+Enumerating objects: 38, done.
+Counting objects: 100% (38/38), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (29/29), done.
+Writing objects: 100% (37/37), 7.81 KiB | 2.60 MiB/s, done.
+Total 37 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/dudung/blank
+   01833f5..5e8c91a  main -> main
+```
+
+## visit repo
