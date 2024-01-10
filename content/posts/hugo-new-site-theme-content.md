@@ -1,10 +1,10 @@
 +++
-title = 'hugo new site, theme, content'
+title = 'Hugo new site, theme, content'
 date = 2024-01-10T20:38:58+07:00
 draft = false
 tags = ['hugo']
 +++
-Use cmd and git bash on Windows 11.
+Create Hugo new site, theme and content using cmd and git bash on Windows 11.
 
 
 ## clone github repo
