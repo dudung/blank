@@ -205,7 +205,7 @@ To https://github.com/dudung/blank
    01833f5..5e8c91a  main -> main
 ```
 
-## visit repo
+## visit repo and create github actions
 1. https://github.com/dudung/blank
 2. https://github.com/dudung/blank/settings
 3. https://github.com/dudung/blank/settings/pages
