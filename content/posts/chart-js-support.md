@@ -1,5 +1,5 @@
 +++
-title = 'chart.js support'
+title = 'Chart.js support'
 date = 2024-01-11T15:48:59+07:00
 draft = false
 +++
