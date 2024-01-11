@@ -1,0 +1,28 @@
+{{ $r := ( .Inner | chomp) }}
+{{ $seed := "foo" }}
+{{ $id := delimit (shuffle (split (md5 $seed) "" )) "" }}
+
+<div id="{{ $id }}">
+</div>
+
+<script>
+let r = {{ $r }};
+let lines = r.split('\n');
+lines.shift();
+lines = lines.join('\n');
+block = lines.split('\n\n');
+
+let info = [];
+for(b of block) {
+  let rows = b.split('\n');
+  let cols = rows[0].split(',');
+  let Nrows = rows.length;
+  let Ncols = cols.length;
+  info.push({rows: Nrows, cols: Ncols});
+}
+
+let div = document.getElementById("{{ $id }}");
+div.innerHTML = JSON.stringify(info);
+console.log(info);
+</script>
+</div>
