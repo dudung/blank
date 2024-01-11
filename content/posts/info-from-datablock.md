@@ -2,6 +2,7 @@
 title = 'Info from datablock'
 date = 2024-01-11T18:56:49+07:00
 draft = false
+tags = ['hugo']
 +++
 Display scatter chart using Chart.js.
 
