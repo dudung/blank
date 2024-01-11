@@ -2,8 +2,9 @@
 title = 'Chart.js support'
 date = 2024-01-11T15:48:59+07:00
 draft = false
+tags = ['hugo']
 +++
-Add support for Chart.js via shortcodes.
+Add support for [Chart.js](https://www.chartjs.org/) via shortcodes.
 
 
 ## shortcodes

@@ -2,6 +2,7 @@
 title = 'Modify footer.html'
 date = 2024-01-11T11:34:25+07:00
 draft = false
+tags = ['hugo']
 +++
 Modify `footer.html` and observe the result.
 

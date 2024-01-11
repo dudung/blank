@@ -2,6 +2,7 @@
 title = 'Mermaid support'
 date = 2024-01-11T06:09:07+07:00
 draft = false
+tags = ['hugo']
 +++
 Add support for drawing flowchart with [Mermaid](https://mermaid.js.org/).
 
