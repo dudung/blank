@@ -7,14 +7,9 @@
 <div style="width: {{ $w }}%;height: {{ $h }}px;margin: 0 auto">
     <canvas id="{{ $id }}"></canvas>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <script type="text/javascript">
     var ctx = document.getElementById('{{ $id }}').getContext('2d');
     var options = {{ $r | safeJS }};
     new Chart(ctx, options);
 </script>
-
-<!--
-orignal code
-url https://github.com/romankurnovskii/awesome-hugo-shortcodes/blob/main/shortcodes/chart/chart.html
--->
