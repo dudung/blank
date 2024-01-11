@@ -45,7 +45,7 @@ for(o of info) {
 var div = document.getElementById("{{ $id }}");
 //div.innerHTML = JSON.stringify(info);
 div.innerHTML = text;
-console.log(info);
+//console.log(info);
 </script>
 </div>
 ```
