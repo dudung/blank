@@ -15,9 +15,11 @@ Content "D:\\blank\\content\\tests\\scatter-plot-with-chart-js.md" created
 It is placed in `content/tests` folder while the shortcode being developed.
 
 
-
 ## tests
 {{< blank/scatter  names="Left,Right" colors="#f88,#88f">}}
+B_LABELS Data-1,Data-2,Data-3
+B_COLORS #f88,#88f,#8f8
+
 5.000,3.000
 4.902,3.618
 4.618,4.176
@@ -81,10 +83,6 @@ It is placed in `content/tests` folder while the shortcode being developed.
 8.309,1.049
 8.809,1.412
 {{< /blank/scatter >}}
-
-
-
-
 
 
 ## generate data
