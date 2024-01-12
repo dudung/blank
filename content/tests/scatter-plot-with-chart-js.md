@@ -17,7 +17,7 @@ It is placed in `content/tests` folder while the shortcode being developed.
 
 
 ## tests
-{{< blank/scatter  >}}
+{{< blank/scatter  names="Left,Right" colors="#f88,#88f" >}}
 5.000,3.000
 4.618,4.176
 3.618,4.902

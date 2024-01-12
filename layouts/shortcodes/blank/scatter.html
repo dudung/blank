@@ -1,4 +1,4 @@
-{{ $w := default "100" (.Get 0) }}
+{{ $w := default "70" (.Get 0) }}
 {{ $h := default "300" (.Get 1) }}
 {{ $r := ( .Inner | chomp) }}
 {{ $seed := "foo" }}
@@ -87,6 +87,8 @@ console.log(series);
       type: 'scatter',
       data: data,
       options: {
+        responsive: true,
+        maintainAspectRatio: false,
         scales: {
           x: {
             type: 'linear',
