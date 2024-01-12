@@ -63,3 +63,5 @@ Previous warning has disappeared.
 ```
 $ mv content/tests/scatter-shortcodes-for-chart-js.md content/tests/update-hugo-module-incompatibility.md
 ```
+
+It must be renamed since the purpose is changed from what it was intended to.
