@@ -7,9 +7,75 @@
 <div style="width: {{ $w }}%;height: {{ $h }}px;margin: 0 auto">
     <canvas id="{{ $id }}"></canvas>
 </div>
+
+
+<script>
+var r = {{ ( .Inner | chomp) }};
+var lines = r.split('\n');
+lines.shift();
+lines = lines.join('\n');
+block = lines.split('\n\n');
+
+var info = [];
+var n = 0;
+for(b of block) {
+  let rows = b.split('\n');
+  let cols = rows[0].split(',');
+  let Nrows = rows.length;
+  let Ncols = cols.length;
+  info.push({block: n, rows: Nrows, cols: Ncols});
+  n += 1;
+}
+
+var text = "";
+for(o of info) {
+  text += "blok " + o['block'] + ': ';
+  text += "rows = " + o['rows'] + ', ';
+  text += "cols = " + o['cols'] + '<br>';
+  text += '<br>';
+}
+
+var div = document.getElementById("{{ $id }}");
+div.innerHTML = text;
+</script>
+
+
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <script type="text/javascript">
     var ctx = document.getElementById('{{ $id }}').getContext('2d');
-    var options = {{ $r | safeJS }};
-    new Chart(ctx, options);
+    
+    const data = {
+      datasets: [{
+        label: 'Scatter Dataset',
+        data: [{
+          x: -10,
+          y: 0
+        }, {
+          x: 0,
+          y: 10
+        }, {
+          x: 10,
+          y: 5
+        }, {
+          x: 0.5,
+          y: 5.5
+        }],
+        backgroundColor: 'rgb(255, 99, 132)'
+      }],
+    };
+    
+    var config = {
+      type: 'scatter',
+      data: data,
+      options: {
+        scales: {
+          x: {
+            type: 'linear',
+            position: 'bottom'
+          }
+        }
+      }
+    };
+    
+    new Chart(ctx, config);
 </script>
