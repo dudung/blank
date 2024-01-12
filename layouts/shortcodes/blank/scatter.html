@@ -11,15 +11,21 @@
 
 <script>
 var r = {{ ( .Inner | chomp) }};
-var lines = r.split('\n');
+
+var eol = '\r\n'
+if(r.indexOf(eol) == -1) eol = '\r'
+if(r.indexOf(eol) == -1) eol = '\n'
+console.log(eol.charCodeAt());
+
+var lines = r.split(eol);
 lines.shift();
-lines = lines.join('\n');
-block = lines.split('\n\n');
+lines = lines.join(eol);
+block = lines.split(eol + eol);
 
 var info = [];
 var n = 0;
 for(b of block) {
-  let rows = b.split('\n');
+  let rows = b.split(eol);
   let cols = rows[0].split(',');
   let Nrows = rows.length;
   let Ncols = cols.length;
@@ -36,7 +42,8 @@ for(o of info) {
 }
 
 var div = document.getElementById("{{ $id }}");
-div.innerHTML = text;
+
+console.log(text);
 </script>
 
 
