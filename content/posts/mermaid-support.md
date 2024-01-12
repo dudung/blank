@@ -55,3 +55,19 @@ flowchart LR
   B(("2"))
 {{</* /mermaid */>}}
 ```
+
+{{< mermaid >}}
+flowchart TB
+  A --> B
+  A(("3"))
+  B(("4"))
+{{< /mermaid >}}
+
+```
+{{</* mermaid */>}}
+flowchart TB
+  A --> B
+  A(("3"))
+  B(("4"))
+{{</* /mermaid */>}}
+``
