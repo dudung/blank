@@ -10,12 +10,17 @@
 
 
 <script>
+function block2xy(b) {
+  console.log(b);
+}
+
+
+
 var r = {{ ( .Inner | chomp) }};
 
 var eol = '\r\n'
 if(r.indexOf(eol) == -1) eol = '\r'
 if(r.indexOf(eol) == -1) eol = '\n'
-console.log(eol.charCodeAt());
 
 var lines = r.split(eol);
 lines.shift();
@@ -41,9 +46,9 @@ for(o of info) {
   text += '<br>';
 }
 
-var div = document.getElementById("{{ $id }}");
+block2xy(block[1]);
 
-console.log(text);
+
 </script>
 
 
