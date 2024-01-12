@@ -60,18 +60,35 @@ function getParams(t) {
   
   for(let l of lines) {
     var cols = l.split(' ');
-    window[cols[0]] = cols[1].split(',');
+    if(cols[0] == 'B_LVISIB') {
+      var temp1 = cols[1].split(',');
+      var temp2 = []
+      for(var i = 0; i < temp1.length; i++) {
+        if(temp1[i] == 'true') {
+          temp2.push(true);
+        } else {
+          temp2.push(false);
+        }
+        temp2.push(Boolean(temp1[i]));
+      }
+      window[cols[0]] = temp2;
+    } else {
+      window[cols[0]] = cols[1].split(',');
+    }
   }
 }
 
-function createDatasets(BS, BL, BC) {
+function createDatasets(series) {
   var datasets = [];
-  var N = Math.min(BS.length, BL.length, BC.length);
+  var N = series.length;
   for(let i = 0; i < N; i++) {
     var ds = {
-      label: B_LABELS[i],
       data: B_SERIES[i],
-      backgroundColor: B_COLORS[i]
+      label: B_SLABEL[i],
+      backgroundColor: B_PCOLOR[i],
+      showLine: B_LVISIB[i],
+      borderColor: B_LCOLOR[i],
+      pointRadius: B_PRADII[i]
     };
     datasets.push(ds);
   }
@@ -88,9 +105,6 @@ for(b of blocks) {
   var d = block2data(b, eol);
   B_SERIES.push(d);
 }
-
-var ds = createDatasets(B_SERIES, B_LABELS, B_COLORS);
-
 </script>
 
 
@@ -101,21 +115,24 @@ var ds = createDatasets(B_SERIES, B_LABELS, B_COLORS);
     
     var config = {
       type: 'scatter',
-      data: {
-        datasets:
-          createDatasets(
-            B_SERIES,
-            B_LABELS,
-            B_COLORS
-          )
-      },
+      data: { datasets: createDatasets(B_SERIES) },
       options: {
         responsive: true,
         maintainAspectRatio: false,
         scales: {
           x: {
             type: 'linear',
-            position: 'bottom'
+            position: 'bottom',
+            title: {
+              display: true,
+              text: B_XLABEL
+            }
+          },
+          y: {
+            title: {
+              display: true,
+              text: B_YLABEL
+            }
           }
         }
       }
