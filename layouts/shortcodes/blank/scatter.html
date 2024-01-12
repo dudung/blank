@@ -10,10 +10,33 @@
 
 
 <script>
-function block2xy(b) {
-  console.log(b);
+function block2lists(b, eol) {
+  var x = [];
+  var y = [];
+  
+  var lines = b.split(eol);
+  for(var row of lines) {
+    var col = row.split(',');
+    x.push(col[0]);
+    y.push(col[1]);
+  }
+  return [x, y];
 }
 
+function block2data(b, eol) {
+  let d = [];
+  
+  var lines = b.split(eol);
+  for(var row of lines) {
+    var col = row.split(',');
+    var obj = {
+      x: col[0],
+      y: col[1]
+    };
+    d.push(obj);
+  }
+  return d;
+}
 
 
 var r = {{ ( .Inner | chomp) }};
@@ -27,27 +50,12 @@ lines.shift();
 lines = lines.join(eol);
 block = lines.split(eol + eol);
 
-var info = [];
-var n = 0;
+var series = [];
 for(b of block) {
-  let rows = b.split(eol);
-  let cols = rows[0].split(',');
-  let Nrows = rows.length;
-  let Ncols = cols.length;
-  info.push({block: n, rows: Nrows, cols: Ncols});
-  n += 1;
+  var d = block2data(b, eol);
+  series.push(d);
 }
-
-var text = "";
-for(o of info) {
-  text += "blok " + o['block'] + ': ';
-  text += "rows = " + o['rows'] + ', ';
-  text += "cols = " + o['cols'] + '<br>';
-  text += '<br>';
-}
-
-block2xy(block[1]);
-
+console.log(series);
 
 </script>
 
@@ -57,23 +65,22 @@ block2xy(block[1]);
     var ctx = document.getElementById('{{ $id }}').getContext('2d');
     
     const data = {
-      datasets: [{
-        label: 'Scatter Dataset',
-        data: [{
-          x: -10,
-          y: 0
-        }, {
-          x: 0,
-          y: 10
-        }, {
-          x: 10,
-          y: 5
-        }, {
-          x: 0.5,
-          y: 5.5
-        }],
-        backgroundColor: 'rgb(255, 99, 132)'
-      }],
+      datasets: [
+        { label: 'Data 1',
+          data: series[0] /* [
+            {x: -10, y: 0},
+            {x: 0, y: 10},
+            {x: 10, y: 5},
+            {x: 0.5, y: 5.5} ] */,
+          backgroundColor: 'rgb(255, 99, 132)' },
+        { label: 'Data 2',
+          data: series[1] /*[
+            {x: 0, y: -10},
+            {x: 10, y: 10},
+            {x: 10, y: -5},
+            {x: 0.5, y: -5.5} ] */,
+          backgroundColor: 'rgb(132, 99, 255)' }
+      ],
     };
     
     var config = {
