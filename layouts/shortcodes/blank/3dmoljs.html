@@ -1,0 +1,37 @@
+{{ $seed := "foo" }}
+{{ $id := delimit (shuffle (split (md5 $seed) "" )) "" }}
+
+
+<style>
+.mol-container {
+  width: 60%;
+  height: 400px;
+  position: relative;
+}
+</style>
+
+<div id="{{ $id }}" class="mol-container"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/3Dmol/2.0.1/3Dmol-min.js"></script>
+
+<script>
+var text = {{ ( .Inner | chomp) }};
+var lines = text.split('\n');
+lines.shift();
+data = lines.join('\n');
+
+var element = document.getElementById("{{ $id }}");
+var config = { backgroundColor: '#eee' };
+var viewer = $3Dmol.createViewer( element, config );
+viewer.addModelsAsFrames(data, "xyz");
+viewer.animate({loop: "forward",reps: 1});
+// cross, line, stick, sphere
+viewer.setStyle(
+{
+  sphere: {colorscheme:'grayCarbon', radius:0.5},
+  stick: {colorscheme:'grayCarbon'}
+});
+viewer.zoomTo();
+viewer.rotate(45, 'y',);
+viewer.render();
+</script>
