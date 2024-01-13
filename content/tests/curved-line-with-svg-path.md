@@ -20,7 +20,23 @@ Put it in `tests` folder first while re-develop `svgpath.html` from `layouts\sho
 B_STYLE red,3,#ccf
 M 50 50 l 100 0
 v 100 h -100 z
+
+B_STYLE blue,10,#aaf
+M 100 120 l 100 0
+v 100 h -100 z
 {{< /blank/svgpath >}}
+
+```
+{{</* blank/svgpath */>}}
+B_STYLE red,3,#ccf
+M 50 50 l 100 0
+v 100 h -100 z
+
+B_STYLE blue,10,#aaf
+M 100 120 l 100 0
+v 100 h -100 z
+{{</* /blank/svgpath */>}}
+```
 
 
 ## test 2
@@ -28,5 +44,30 @@ v 100 h -100 z
 B_STYLE #f44,3,#fcc
 M 150 100 l 50 0 l 0 -50 l -100 0 l 0 100 l 100 0 m 0 -25
 m -25 0 l -50 0 l 0 -50 l 50 0
+
+B_STYLE #080,4,none
+M 50,50
+A 100 100 0.0 0 1 200 150
+Z
 {{< /blank/svgpath >}}
 
+```
+{{</* blank/svgpath */>}}
+B_STYLE #f44,3,#fcc
+M 150 100 l 50 0 l 0 -50 l -100 0 l 0 100 l 100 0 m 0 -25
+m -25 0 l -50 0 l 0 -50 l 50 0
+
+B_STYLE #080,4,none
+M 50,50
+A 100 100 0.0 0 1 200 150
+Z
+{{</* /blank/svgpath */>}}
+```
+
+
+## features
++ I can handle multiple blocks.
++ Each block begins with a line for style
+  - stroke
+  - stroke-width
+  - fill

@@ -34,12 +34,24 @@ function block2data(b, eol) {
   return d;
 }
 
-function getBlocks(r, eol) {
-  let lines = r.split(eol);
+function getBlocks(text, eol) { 
+  let lines = text.split(eol);
   lines.shift();
   lines = lines.join(eol);
   blocks = lines.split(eol + eol);
   return blocks;
+}
+
+function cleanPrePostBlankLines(text) {
+  let inner = text;
+  let eol = getEOL(inner);
+  let lines = inner.split(eol);
+  
+  if(lines[0].length == 0) lines.shift();
+  let N = lines.length;
+  if(lines[N-1].length == 0) lines.pop();
+  
+  return lines;
 }
 
 function getParams(t) {
