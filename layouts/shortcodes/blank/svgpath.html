@@ -1,0 +1,50 @@
+{{ $w := default "300" (.Get "width") }}
+{{ $h := default "200" (.Get "height") }}
+{{ $seed := "foo" }}
+{{ $id := delimit (shuffle (split (md5 $seed) "" )) "" }}
+
+<div id='{{ $id }}' style="padding: 4px;">
+</div>
+
+<script>
+var div = document.getElementById('{{ $id }}');
+
+var lines = getLines('{{ $id }}');
+var style = lines.shift().split(' ')[1].split(',');
+
+var d = lines.join(' ');
+
+var svgns = "http://www.w3.org/2000/svg";
+var svg = document.createElementNS(svgns, "svg");
+svg.setAttribute("width", '{{ $w }}');
+svg.setAttribute("height", '{{ $h }}');
+
+var border = '{{ .Get "border" }}';
+if(border.length == 0) border = "#888";
+svg.style.border = '0.1px solid ' + border;
+
+var path = document.createElementNS(svgns, "path");
+path.setAttribute("d", d);
+path.setAttribute("stroke", style[0]);
+path.setAttribute("stroke-width", style[1]);
+path.setAttribute("fill", style[2]);
+
+svg.append(path);
+div.append(svg);
+
+function getLines(id) {
+  let pardiv = document.getElementById(id);
+  pardiv.style.display = '{{ .Get "display" }}';
+  
+  let inner = "{{ .Inner }}";
+  let eol = getEOL(inner);
+  let lines = inner.split(eol);
+  
+  if(lines[0].length == 0) lines.shift();
+  let N = lines.length;
+  if(lines[N-1].length == 0) lines.pop();
+  
+  return lines;
+}
+</script>
+
