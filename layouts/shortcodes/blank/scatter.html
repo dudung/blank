@@ -4,102 +4,16 @@
 {{ $seed := "foo" }}
 {{ $id := delimit (shuffle (split (md5 $seed) "" )) "" }}
 
-<div style="width: {{ $w }}%;height: {{ $h }}px;margin: 0 auto">
+<div style="width: {{ $w }}%; height: {{ $h }}px; margin: 0 auto">
     <canvas id="{{ $id }}"></canvas>
 </div>
 
 
 <script>
-function block2lists(b, eol) {
-  var x = [];
-  var y = [];
-  
-  var lines = b.split(eol);
-  for(var row of lines) {
-    var col = row.split(',');
-    x.push(col[0]);
-    y.push(col[1]);
-  }
-  return [x, y];
-}
-
-function block2data(b, eol) {
-  let d = [];
-  
-  var lines = b.split(eol);
-  for(var row of lines) {
-    var col = row.split(',');
-    var obj = {
-      x: col[0],
-      y: col[1]
-    };
-    d.push(obj);
-  }
-  return d;
-}
-
-
-function getEOL(ts) {
-  var eol = '\r\n';
-  if(r.indexOf(eol) == -1) eol = '\r';
-  if(r.indexOf(eol) == -1) eol = '\n';
-  return eol
-}
-
-function getBlocks(r, eol) {
-  var lines = r.split(eol);
-  lines.shift();
-  lines = lines.join(eol);
-  blocks = lines.split(eol + eol);
-  return blocks;
-}
-
-function getParams(t) {
-  var eol = getEOL(t);
-  var lines = t.split(eol);
-  
-  for(let l of lines) {
-    var cols = l.split(' ');
-    if(cols[0] == 'B_LVISIB') {
-      var temp1 = cols[1].split(',');
-      var temp2 = []
-      for(var i = 0; i < temp1.length; i++) {
-        if(temp1[i] == 'true') {
-          temp2.push(true);
-        } else {
-          temp2.push(false);
-        }
-        temp2.push(Boolean(temp1[i]));
-      }
-      window[cols[0]] = temp2;
-    } else {
-      window[cols[0]] = cols[1].split(',');
-    }
-  }
-}
-
-function createDatasets(series) {
-  var datasets = [];
-  var N = series.length;
-  for(let i = 0; i < N; i++) {
-    var ds = {
-      data: B_SERIES[i],
-      label: B_SLABEL[i],
-      backgroundColor: B_PCOLOR[i],
-      showLine: B_LVISIB[i],
-      borderColor: B_LCOLOR[i],
-      pointRadius: B_PRADII[i]
-    };
-    datasets.push(ds);
-  }
-  return datasets;
-}
-
 var r = {{ ( .Inner | chomp) }};
 var eol = getEOL(r);
 var blocks = getBlocks(r, eol);
 var params = getParams(blocks.shift());
-
 var B_SERIES = [];
 for(b of blocks) {
   var d = block2data(b, eol);
@@ -114,7 +28,7 @@ for(b of blocks) {
     
     var config = {
       type: 'scatter',
-      data: { datasets: createDatasets(B_SERIES) },
+      data: { datasets: datasets4Scatter(B_SERIES) },
       options: {
         responsive: true,
         maintainAspectRatio: false,
