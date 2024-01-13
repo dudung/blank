@@ -18,5 +18,6 @@ Content "D:\\blank\\content\\tests\\abcjs-support.md" created
 X:1
 K:C
 CC GG | AA G2 | CC GG | AA G2 |
-CC GG | 
+GG FF | EE D2 | GG FF | EE D2 | 
+CC GG | AA G2 | FF EE | DD C2 |
 {{< /blank/abcjs >}}
