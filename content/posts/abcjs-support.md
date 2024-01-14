@@ -4,6 +4,7 @@ date = 2024-01-13T17:48:45+07:00
 draft = false
 +++
 Add support for display music notation witn [abcjs](https://paulrosen.github.io/abcjs/).
+<!--more-->
 
 
 ## create post

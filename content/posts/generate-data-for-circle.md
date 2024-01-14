@@ -5,6 +5,7 @@ draft = false
 tags = ['js']
 +++
 Generate data points for circle using Vanilla JS.
+<!--more-->
 
 
 ## create post

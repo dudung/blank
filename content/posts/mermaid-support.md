@@ -5,6 +5,7 @@ draft = false
 tags = ['hugo']
 +++
 Add support for drawing flowchart with [Mermaid](https://mermaid.js.org/).
+<!--more-->
 
 
 ## shortcodes

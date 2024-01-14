@@ -4,7 +4,8 @@ date = 2024-01-14T17:12:38+07:00
 draft = false
 math = true
 +++
-Analyze DC circuit with 3 loops. <!--more--> 
+Analyze DC circuit with 3 loops.
+<!--more-->
 
 
 ## simulator
@@ -29,7 +30,7 @@ will produce http://tinyurl.com/ytbrufmb with circuit diagram of
 
 {{< svg "svg/circuit-20240114-1721.svg" >}}
 
-where $\varepsilon_1 = 6 {\rm V}$, $\varepsilon_2 = 12 {\rm V}$, and $\varepsilon_3 = 16 {\rm V}$, respectively in CW direction from NW.
+where $\varepsilon_1 = 6 \ {\rm V}$, $\varepsilon_2 = 12 \ {\rm V}$, and $\varepsilon_3 = 16 \ {\rm V}$, respectively in CW direction from NW.
 
 
 ## elements
@@ -191,7 +192,7 @@ $$
 ## numpy
 There is `solve()` function in NumPy to solve SLE.
 
-```
+```python
 import numpy as np
 
 R = np.array(
@@ -222,12 +223,15 @@ with the result is as follow
 [1.1 1.9 0.9]
 ```
 
-which shows that $I_1 = 1.1 {\rm A}$, $I_2 = 1.9 {\rm A}$, and $I_6 = 0.9 {\rm A}$.
+which shows that $I_1 = 1.1 \ {\rm A}$, $I_2 = 1.9 \ {\rm A}$, and $I_6 = 0.9 \ {\rm A}$.
 
 
 ## challenges
++ Solve Equations (12) using substitution or elimination method to find $I_1$, $I_2$, and $I_3$. Then find formula of the current as function of batteries and resistors.
 + Execute the code on https://onecompiler.com/python/3zze7accv and explain what the matrices $\mathbf{R}$, $\mathbf{E}$, and $\mathbf{I}$ are.
++ Relate the $\mathbf{R}$, $\mathbf{E}$, and $\mathbf{I}$ matrices with matrices in Equation (14).
 + Compare the result from given code with the simulator on http://tinyurl.com/ytbrufmb.
++ Calculate the values of $I_1$, $I_2$, and $I_3$ if $\varepsilon_1 = 12 \ {\rm V}$, $\varepsilon_2 = 24 \ {\rm V}$, and $\varepsilon_3 = 32 \ {\rm V}$,
 
 
 ## refs

@@ -5,6 +5,7 @@ draft = false
 tags = ['hugo']
 +++
 Display scatter chart using Chart.js.
+<!--more-->
 
 
 ## shortcodes

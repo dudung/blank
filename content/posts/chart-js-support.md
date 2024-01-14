@@ -5,6 +5,7 @@ draft = false
 tags = ['hugo']
 +++
 Add support for [Chart.js](https://www.chartjs.org/) via shortcodes.
+<!--more-->
 
 
 ## shortcodes

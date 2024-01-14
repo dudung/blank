@@ -5,6 +5,7 @@ draft = false
 tags = ['hugo']
 +++
 Remove summary from list of posts.
+<!--more-->
 
 
 ## create post

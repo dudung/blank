@@ -5,6 +5,7 @@ draft = false
 tags = ['hugo']
 +++
 Update Hugo while creating `scatter.html` shortcode.
+<!--more-->
 
 
 ## clone repo

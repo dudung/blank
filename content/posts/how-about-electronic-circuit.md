@@ -4,6 +4,7 @@ date = 2024-01-14T07:51:28+07:00
 draft = false
 +++
 JS lib for drawing electronic circuit can not be found, and following is the current alternative.
+<!--more-->
 
 
 ## plain text

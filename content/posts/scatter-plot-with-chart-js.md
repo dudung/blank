@@ -4,6 +4,7 @@ date = 2024-01-12T08:18:18+07:00
 draft = false
 +++
 Create shortcode for scatter plot with [Chart.js](https://www.chartjs.org/).
+<!--more-->
 
 
 ## create post

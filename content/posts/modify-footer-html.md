@@ -5,6 +5,7 @@ draft = false
 tags = ['hugo']
 +++
 Modify `footer.html` and observe the result.
+<!--more-->
 
 
 ## footer.html

@@ -5,6 +5,7 @@ draft = false
 tags = ['hugo']
 +++
 Try code for Markdown table.
+<!--more-->
 
 
 ## create post

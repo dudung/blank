@@ -5,6 +5,7 @@ draft = false
 tags = ['hugo']
 +++
 Create Hugo new site, theme and content using cmd and git bash on Windows 11.
+<!--more-->
 
 
 ## clone github repo

@@ -6,6 +6,7 @@ math = true
 tags = ['hugo']
 +++
 Add support for displaying LaTeX equations with [KaTeX](https://katex.org/).
+<!--more-->
 
 
 ## partials
