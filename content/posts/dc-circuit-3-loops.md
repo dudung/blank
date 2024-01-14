@@ -4,7 +4,7 @@ date = 2024-01-14T17:12:38+07:00
 draft = false
 math = true
 +++
-Analyze DC circuit with 3 loops.
+Analyze DC circuit with 3 loops. <!--more--> 
 
 
 ## simulator
@@ -91,13 +91,146 @@ Loop begins from negative terminal of a battery.
 ## equations reduction
 Since there are only three unknowns use Equations (1)-(4) in Equations (5)-(6) so that it contains only $I_1$, $I_2$, and $I_6$.
 + (1) & (3) &rightarrow; (5)
-  $$\tag{7}
+  $$\tag{8}
   \begin{array}{c}
   \varepsilon_1 - I_1 R_1 - (I_1 + I_2) R_3 - (I_1 - I_6) R_4 = 0 \newline
    I_1 R_1 + (I_1 + I_2) R_3 + (I_1 - I_6) R_4 = \varepsilon_1 \newline
-   (R_1 + R_3 + R_4) I_1 + R_3 I_2 - R_4 I_6 = \varepsilon_1 \newline
+   (R_1 + R_3 + R_4) I_1 + R_3 I_2 - R_4 I_6 = \varepsilon_1.
    \end{array}
   $$
++ (1) & (4) &rightarrow; (6)
+  $$\tag{9}
+  \begin{array}{c}
+  \varepsilon_2 - I_2 R_2 - (I_1 + I_2) R_3 - (I_2 + I_6) R_5 = 0 \newline
+  I_2 R_2 + (I_1 + I_2) R_3 + (I_2 + I_6) R_5 = \varepsilon_2 \newline
+  R_3 I_1 + (R_2 + R_3 + R_5) I_2 + R_5 I_6 = \varepsilon_2.
+  \end{array}
+  $$
++ (3) & (4) &rightarrow; (7)
+  $$\tag{10}
+  \begin{array}{c}
+  \varepsilon_3 - I_6 R_6 + (I_1 - I_6) R_4 - (I_2 + I_6) R_5 = 0 \newline
+  I_6 R_6 - (I_1 - I_6) R_4 + (I_2 + I_6) R_5 = \varepsilon_3 \newline
+  -R_4 I_1 + R_5 I_2 + (R_4 + R_5 + R_6) I_6 = \varepsilon_3.
+  \end{array}
+  $$
+
+
+## new variables
+To simplity a new and more compact variable is defined
+
+$$\tag{11}
+R_{abc} = R_a + R_b + R_c.
+$$
+
+Using this equation we can have from (8), (9), (10)
+
+$$\tag{12}
+\begin{array}{c}
+R_{134} I_1 + R_3 I_2 - R_4 I_6 = \varepsilon_1,\newline
+R_3 I_1 + R_{235} I_2 + R_5 I_6 = \varepsilon_2,\newline
+-R_4 I_1 + R_5 I_2 + R_{456} I_6 = \varepsilon_3,
+\end{array}
+$$
+
+which later can be presented in matrix form as follow
+
+$$\tag{13}
+\left[
+\begin{array}{ccc}
+R_{134} & R_3 & -R_4 \newline
+R_3 & R_{235} & R_5 \newline
+-R_4 & R_5 & R_{456}
+\end{array}
+\right]
+\left[
+\begin{array}{c}
+I_1 \newline
+I_2 \newline
+I_6
+\end{array}
+\right] =
+\left[
+\begin{array}{c}
+\varepsilon_1 \newline
+\varepsilon_2 \newline
+\varepsilon_6
+\end{array}
+\right].
+$$
+
+The last equation can be solved using invers matrix or iterative method for SLE.
+
+## matrices
+From previous table, Equation (13) can be written with its elements value
+
+$$\tag{14}
+\left[
+\begin{array}{ccc}
+4.5 & 1.5 & -2 \newline
+1.5 & 4.5 & 2 \newline
+-2 & 2 & 16
+\end{array}
+\right]
+\left[
+\begin{array}{c}
+I_1 \newline
+I_2 \newline
+I_6
+\end{array}
+\right] =
+\left[
+\begin{array}{c}
+6 \newline
+12 \newline
+16
+\end{array}
+\right].
+$$
+
+## numpy
+There is `solve()` function in NumPy to solve SLE.
+
+```
+import numpy as np
+
+R = np.array(
+  [
+    [  4.5,  1.5,  -2],
+    [  1.5,  4.5,   2],
+    [ -2,    2,    16]
+  ]
+)
+
+E = np.array(
+  [
+     6,
+    12,
+    16
+  ]
+)
+
+I = np.linalg.solve(R,E)
+
+print(I)
+```
+
+that is available on https://onecompiler.com/python/3zze7accv and 
+with the result is as follow
+
+```
+[1.1 1.9 0.9]
+```
+
+which shows that $I_1 = 1.1 {\rm A}$, $I_2 = 1.9 {\rm A}$, and $I_6 = 0.9 {\rm A}$.
+
+
+## challenges
++ Execute the code on https://onecompiler.com/python/3zze7accv and explain what the matrices $\mathbf{R}$, $\mathbf{E}$, and $\mathbf{I}$ are.
++ Compare the result from given code with the simulator on http://tinyurl.com/ytbrufmb.
+
 
 ## refs
 + [Kirchhoffs circuit laws](https://www.electronics-tutorials.ws/dccircuits/dcp_4.html)
++ [Iterative methods](http://www2.stat.duke.edu/~sayan/863/lec/iterative.pdf)
++ [Solving Systems of Linear Equations with Python's Numpy](https://stackabuse.com/solving-systems-of-linear-equations-with-pythons-numpy/)
