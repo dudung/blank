@@ -115,5 +115,5 @@ Not quite meet the need, but inspiring
 + [An electronic circuit simulator in javascript](https://www.wiquid.fr/index.php/2022/11/22/a-circuit-simulator-in-javascript/)
 + [Logic Circuits](https://www.jointjs.com/demos/logic-circuits)
 + [Simplify Your Work in Power Electronics with Circuit Diagram Tool](https://synergycodes.com/blog/simplify-your-work-in-power-electronics/)
-+ [CDD jointjs](https://www.jsdelivr.com/package/npm/jointjs)
++ [CDN jointjs](https://www.jsdelivr.com/package/npm/jointjs)
 + [Question on SO, comment #3](https://stackoverflow.com/a/20620297/9475509)
