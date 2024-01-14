@@ -35,26 +35,69 @@ where $\varepsilon_1 = 6 {\rm V}$, $\varepsilon_2 = 12 {\rm V}$, and $\varepsilo
 ## elements
 Let us name the elements as follow
 ```
-   R1    R2
-E1    R3    E2
-   R4    R5
-R6
-      E3
+    a--R1--b--R2--c 
+↑   |      |      |   ↑
+I1  E1     R3     E2  I2
+    |      |      |
+    d--R4--e--R5--f
+    |             |   
+    R6            |  I6
+    |             |  ↓ 
+    g------E3-----h
 ```
 according to the position of each element in previous figure.
 
-Element | Value | Unit
-:-: | :-: | :-:
-$\varepsilon_1$ | 6 | V
-$\varepsilon_1$ | 12 | V
-$\varepsilon_1$ | 16 | V
-$R_1$ | 1 | &Omega;
-$R_2$ | 2 | &Omega;
-$R_3$ | 1.5 | &Omega;
-$R_4$ | 2 | &Omega;
-$R_5$ | 2 | &Omega;
-$R_6$ | 12 | &Omega;
+Element | $\varepsilon_1$ | $\varepsilon_2$ | $\varepsilon_3$ | $R_1$ | $R_2$ | $R_3$ | $R_4$ | $R_5$ | $R_6$
+:- | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-:
+**Value** | 6 | 12 | 16 | 1 | 1 | 1.5 | 2 | 2 | 12
 
 
-## equations
-Using [Kirchhoffs circuit laws](https://www.electronics-tutorials.ws/dccircuits/dcp_4.html) we can have following equations.
+## equations from kcl
+Current subscript is chosen to be the same as the resistor it is passing through.
++ Point $b$
+  $$
+  \tag{1} I_1 + I_2 = I_3.
+  $$
++ Point $e$
+  $$\tag{2}
+  I_3 = I_4 + I_5.
+  $$
++ Point $d$
+  $$\tag{3}
+  I_6 + I_4 = I_1.
+  $$
++ Point $f$
+  $$\tag{4}
+  I_5 = I_2 + I_6.
+  $$
+
+
+## equation from kvl
+Loop begins from negative terminal of a battery.
++ Loop $d-a-b-e-a$
+  $$\tag{5}
+  \varepsilon_1 - I_1 R_1 - I_3 R_3 - I_4 R_4 = 0.
+  $$
++ Loop $f-c-b-e-f$
+  $$\tag{6}
+  \varepsilon_2 - I_2 R_2 - I_3 R_3 - I_5 R_5 = 0.
+  $$
++ Loop $h-g-d-e-f-h$
+  $$\tag{7}
+  \varepsilon_3 - I_6 R_6 + I_4 R_4 - I_5 R_5 = 0.
+  $$
+
+
+## equations reduction
+Since there are only three unknowns use Equations (1)-(4) in Equations (5)-(6) so that it contains only $I_1$, $I_2$, and $I_6$.
++ (1) & (3) &rightarrow; (5)
+  $$\tag{7}
+  \begin{array}{c}
+  \varepsilon_1 - I_1 R_1 - (I_1 + I_2) R_3 - (I_1 - I_6) R_4 = 0 \newline
+   I_1 R_1 + (I_1 + I_2) R_3 + (I_1 - I_6) R_4 = \varepsilon_1 \newline
+   (R_1 + R_3 + R_4) I_1 + R_3 I_2 - R_4 I_6 = \varepsilon_1 \newline
+   \end{array}
+  $$
+
+## refs
++ [Kirchhoffs circuit laws](https://www.electronics-tutorials.ws/dccircuits/dcp_4.html)
