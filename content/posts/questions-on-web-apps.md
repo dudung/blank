@@ -41,12 +41,18 @@ Some questions to motivate the learning on web apps.
 + `(5)` In what category of technologies is the Node.js?
 
 
+## static & dynamic web
++ `(3)` What is static web?
++ `(3)` What is dynamic web?
++ `(2)` Which category is GitHub page with Hugo?
+
+
 ## crawling & scaping
-+ `(5)` Explain about web crawling.
-+ `(5)` Explain about web scraping.
-+ `(5)` Give an HTML document that is easy and hard for web scraping.
++ `(3)` Explain about web crawling.
++ `(3)` Explain about web scraping.
++ `(1)` Give an HTML document that is easy and hard for web scraping.
 
 
 ```
-15 + 15 + 15 + 20 + 20 + 15 = 100
+15 + 15 + 15 + 20 + 20 + 8 + 7 = 100
 ```
