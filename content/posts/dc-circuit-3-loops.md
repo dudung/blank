@@ -189,6 +189,9 @@ I_6
 \right].
 $$
 
+It would be clearer if every matrix in above equation is uniquely named.
+
+
 ## numpy
 There is `solve()` function in NumPy to solve SLE.
 
