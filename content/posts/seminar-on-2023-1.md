@@ -21,7 +21,7 @@ List of seminar on 2023-1 semester.
 + `17-wed-0900-FI4092` PW Muhammad Haidar Aziz ([comm](https://osf.io/g9ske), [report](https://osf.io/phk5n), [slide](https://osf.io/twsh5)).
 + `16-tue-0900-FI4091` RW Jesse Owen ([comm](https://osf.io/ma8e6), [report](https://osf.io/vnarw), [slide](https://osf.io/gvxk2), [img](https://www.instagram.com/p/C2JNHvevYcz/)).
 + `10-wed-1400-FI8091` AW Vepy Asyana ([comm](https://osf.io/5g3m6), [report](https://osf.io/txv4s), [slide](https://osf.io/x2a3g), [img](https://osf.io/6z59t)).
-+ `10-wed-0830-FI9094` IM Yunita Anggraini ([comm](https://osf.io/mv5b7), [report](https://osf.io/rx8qh), slide, [img](https://www.instagram.com/p/C15xbPgSwgR/)).
++ `10-wed-0830-FI9094` IM Yunita Anggraini ([comm](https://osf.io/mv5b7), [report](https://osf.io/rx8qh), [slide](https://osf.io/qn64a), [img](https://www.instagram.com/p/C15xbPgSwgR/)).
 + `09-tue-0900-AS8095` TH Muhammad Isnaenda Ikhsan ([comm](https://osf.io/vgwmb), [report](https://osf.io/u6cbf), [slide](https://osf.io/tcbmk), [img](https://www.instagram.com/p/C13K7StPnxo/)).
 + `08-mon-1030-NT6007` DA Fathi Ibrahim ([comm](https://osf.io/3ghns), [report](https://osf.io/5jndu), [slide](https://osf.io/b2xwp), [img](https://www.instagram.com/p/C10wxl8P2F4/)).
 + `05-fri-1000-FI8091` IA Yeni Pertiwi ([comm](https://osf.io/at9dv), [report](https://osf.io/fsuty), [slide](https://osf.io/25vta), [img](https://www.instagram.com/p/C1s_IWMPmdY/)).
