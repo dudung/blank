@@ -9,7 +9,7 @@ List of seminar on 2023-1 semester.
 
 
 ## jan-2024
-+ `19-fri-1430-FI4091` FH Audrey Lynn Johanes ([comm](https://osf.io/e7fdr), [report](https://osf.io/rkp4e), slide).
++ `19-fri-1430-FI4091` FH Audrey Lynn Johanes ([comm](https://osf.io/e7fdr), [report](https://osf.io/rkp4e), [slide](https://osf.io/ws648)).
 + `19-fri-1300-FI4091` SV Angeli Fransiska Njo ([comm](https://osf.io/mjf3b), [report](https://osf.io/r2gvp), slide).
 + `19-fri-0930-FI6093` AI Nazla Innayah ([comm](https://osf.io/bv6fj), [report](https://osf.io/5xha3), [slide](https://osf.io/e4yns)).
 + `19-fri-0800-FI4091` AI Oeken Ginting ([comm](https://osf.io/j9x6n), [report](https://osf.io/9tdx6), [slide](https://osf.io/avrf4)).
