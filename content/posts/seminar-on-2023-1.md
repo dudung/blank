@@ -12,7 +12,7 @@ List of seminar on 2023-1 semester.
 + `19-fri-1430-FI4091` FH Audrey Lynn Johanes ([comm](https://osf.io/e7fdr), [report](https://osf.io/rkp4e), slide).
 + `19-fri-1300-FI4091` SV Angeli Fransiska Njo ([comm](https://osf.io/mjf3b), [report](https://osf.io/r2gvp), slide).
 + `19-fri-0930-FI6093` AI Nazla Innayah ([comm](https://osf.io/bv6fj), [report](https://osf.io/5xha3), [slide](https://osf.io/e4yns)).
-+ `19-fri-0800-FI4091` AI Oeken Ginting ([comm](https://osf.io/j9x6n), [report](https://osf.io/9tdx6), slide).
++ `19-fri-0800-FI4091` AI Oeken Ginting ([comm](https://osf.io/j9x6n), [report](https://osf.io/9tdx6), [slide](https://osf.io/avrf4)).
 + `18-thu-1430-FI4091` AL Rizki Ardika Fadilah ([comm](https://osf.io/hrxp3), [report](https://osf.io/nyjqb), [slide](https://osf.io/bzmyp)).
 + `18-thu-1300-FI4092` SV Mawaf Alfarizki ([comm](https://osf.io/n9afv), [report](https://osf.io/wbcsh), [slide](https://osf.io/2e54b)).
 + `18-thu-1000-FI4092` NH Isnaini Mufidhatul Mughni ([comm](https://osf.io/hup3j), [report](https://osf.io/cq69d), [slide](https://osf.io/34kmh))
