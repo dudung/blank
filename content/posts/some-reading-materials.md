@@ -21,3 +21,8 @@ Kevin Warwick, "Artificial Intelligence: The Basics", Routledge, 1st edition, 18
 ## intelligent system
 + [`kndwg`](https://osf.io/kndwg)
 Geoff Hulten, "Building Intelligent Systems: A Guide to Machine Learning Engineering", Apress, 1st edition, 7 Mar 2018, url https://isbnsearch.org/isbn/9781484234310.
+
+
+## gyroscope technology
++ [`we3uj`](https://osf.io/we3uj)
+Mario N Armenise, Caterina Ciminelli, Francesco Dell'Olio, Vittorio M N Passaro, "Advances in Gyroscope Technologies", Springer, 2011 edition, 2 Dec 2010, url https://isbnsearch.org/isbn/9783642154935.
