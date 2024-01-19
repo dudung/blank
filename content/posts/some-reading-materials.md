@@ -26,3 +26,10 @@ Geoff Hulten, "Building Intelligent Systems: A Guide to Machine Learning Enginee
 ## gyroscope technology
 + [`we3uj`](https://osf.io/we3uj)
 Mario N Armenise, Caterina Ciminelli, Francesco Dell'Olio, Vittorio M N Passaro, "Advances in Gyroscope Technologies", Springer, 2011 edition, 2 Dec 2010, url https://isbnsearch.org/isbn/9783642154935.
+
+
+## modern physics
++ [`ma6zu`](https://osf.io/ma6zu)
+Kenneth S Krane, "Modern Physics", Wiley, 3rd edition, 1 Feb 2012, url https://isbnsearch.org/isbn/9781118061145.
++ [`xs8gq`](https://osf.io/xs8gq)
+Paul A Tipler, Ralph Llewellyn, "Modern Physics", W H Freemand, 5th edition, 28 Sep 2007, url https://isbnsearch.org/isbn/9780716775508.
