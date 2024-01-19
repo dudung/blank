@@ -33,3 +33,12 @@ Mario N Armenise, Caterina Ciminelli, Francesco Dell'Olio, Vittorio M N Passaro,
 Kenneth S Krane, "Modern Physics", Wiley, 3rd edition, 1 Feb 2012, url https://isbnsearch.org/isbn/9781118061145.
 + [`xs8gq`](https://osf.io/xs8gq)
 Paul A Tipler, Ralph Llewellyn, "Modern Physics", W H Freemand, 5th edition, 28 Sep 2007, url https://isbnsearch.org/isbn/9780716775508.
+
+
+## granular materials
++ [`6gm73`](https://osf.io/6gm73)
+Anita Mehta, "Granular Matter: An Interdisciplinary Approach", Springer, 6 Oct 2011, url https://isbnsearch.org/isbn/9781461287254.
++ [`7q4fx`](https://osf.io/7q4fx)
+Thorsten Poschel, Thomas Schwager, "Computational Granular Dynamics: Models and Algorithms", Springer, 0 edition, 20 May 2055, url https://isbnsearch.org/isbn/9783540214854.
++ [`g9dw2`](https://osf.io/g9dw2)
+Jacques Duran, "Sands, Powders, and Grains: An Introduction to the Physics of Granular Materials", Springer, 1st edition, 2000, url https://isbnsearch.org/isbn/9781461267904.
