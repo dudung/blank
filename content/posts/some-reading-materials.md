@@ -19,6 +19,10 @@ Vijay Kotu, Bala Deshpande, "Data Science: Concepts and Practice", Morgan Kaufma
 + [`mhrk8`](https://osf.io/mhrk8) Lillian Pierson, "Data Science For Dummies", For Dummies, 1st edition, 9 Mar 2015, url https://isbnsearch.org/isbn/9781118841556.
 + [`xqdwm`](https://osf.io/xqdwm)
 Veronica S. Moertini, Mariskha T. Adithia (eds), "Pengantar Data Science dan Aplikasinya bagi Pemula", Unpar Press, Cetakan 1, Dec 2020, url https://informatika.unpar.ac.id/buku-pengantar-data-science-dan-aplikasinya/ [20240123].
++ [`xwgnr`](https://osf.io/xwgnr)
+Dirk P. Kroese, Zdravko Botev, Thomas Taimre, Radislav Vaisman, "Data Science and Machine Learning: Mathematical and Statistical Methods", Chapman and Hall, 1st edition, 22 Nov 2019, url https://isbnsearch.org/isbn/9781138492530.
++ [`t7uc5`](https://osf.io/t7uc5)
+Joel Grus, "Data Science from Scratch: First Principles with Python", O'Reilly Media, 1st edition, 30 Apr 2015, url https://isbnsearch.org/isbn/9781491901427.
 
 
 ## graph network
