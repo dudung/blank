@@ -9,7 +9,7 @@ Study on Au nanoparticle synthesis with Agent-based model.
 
 
 ## 23-jan2-24
-+ A reference titled "Gold Nanoparticle Monolayers from Sequential Interfacial Ligand Exchange and Migration in a Three-Phase System" informed.
++ A reference titled "Gold Nanoparticle Monolayers from Sequential Interfacial Ligand Exchange and Migration in a Three-Phase System" informed, will be discussed and studied.
 
 
 ## 22-jan-2024
