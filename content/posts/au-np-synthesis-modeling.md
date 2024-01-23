@@ -8,6 +8,10 @@ Study on Au nanoparticle synthesis with Agent-based model.
 <!--more-->
 
 
+## 23-jan2-24
++ A reference titled "Gold Nanoparticle Monolayers from Sequential Interfacial Ligand Exchange and Migration in a Three-Phase System" informed.
+
+
 ## 22-jan-2024
 + Role of heating until 100 &deg;C in activation of HAuCl₄ agglomeration ability, which can explain why the acid does not agglomerate.
 + Relation between citrate addition and Au nanoparticle aggregation inhibition, which might depend on concentration or in molecular scale the ratio of numbers of particle types.
