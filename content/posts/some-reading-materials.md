@@ -8,6 +8,11 @@ Target books or journals to read in near future, hopefully.
 <!--more-->
 
 
+## nanoparticle
++ [`jy7dm`](https://osf.io/jy7dm)
+Guang Yang, Daniel T. Hallinan, "Gold Nanoparticle Monolayers from Sequential Interfacial Ligand Exchange and Migration in a Three-Phase System", Scientific Report, vol 6, p 35339, Oct 2016, url https://doi.org/10.1038/srep35339.
+
+
 ## artificial Intelligence
 + [`kgfxh`](https://osf.io/kgfxh)
 Kevin Warwick, "Artificial Intelligence: The Basics", Routledge, 1st edition, 18 Aug 2011, url https://isbnsearch.org/isbn/9780415564830.
