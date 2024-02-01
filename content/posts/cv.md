@@ -7,10 +7,13 @@ Evolution of curriculum vitae of me.
 <!--more-->
 
 ## 2024
-+ `20240131` [`7mkc6`](https://osf.io/7mkc6) `doc`
-+ `20240125` [`sa5e2`](https://osf.io/sa5e2) `doc`
-+ `20240130` [`t4dfu`](https://osf.io/t4dfu) `doc`
-+ `20240112` [`6es4a`](https://osf.io/6es4a) `doc`
++ `20240131` [`7mkc6`](https://osf.io/7mkc6) `doc` `lamsama`
++ `20240130` [`e9rdn`](https://osf.io/e9rdn) `doc` `fi-wd-r-p2mi`
++ `20240130` [`t4dfu`](https://osf.io/t4dfu) `doc` `fi-ag-r-p2mi`
++ `20240129` [`qbfy9`](https://osf.io/qbfy9) `doc` `as-ia-r-p2mi`
++ `20240125` [`tw3c2`](https://osf.io/tw3c2) `doc` `fi-td-p-ppnn`
++ `20240125` [`sa5e2`](https://osf.io/sa5e2) `doc` `ma-um-r-p2mi`
++ `20240122` [`6es4a`](https://osf.io/6es4a) `doc` `fi-mm-r-itb`
 
 
 ## 2023
