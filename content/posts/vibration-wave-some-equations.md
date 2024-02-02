@@ -37,10 +37,16 @@ for 3-D case.
 
 
 ## solution of wave equation
-For (1) the solution is
+For (2) the solution is
 
 $$\tag{4}
 \psi(x, t) = A \sin(kx - \omega t + \phi_0),
 $$
 
-with amplitude $A$, wavenumber $k$, angular frequency $\omega$, and initial phase $\phi_0$. 
+with amplitude $A$, wavenumber $k$, angular frequency $\omega$, and initial phase $\phi_0$, and
+
+$$\tag{5}
+\psi(\vec{r}, t) = A \sin(\vec{k} \cdot \vec{r} - \omega t + \phi_0),
+$$
+
+is the solution for (3)
