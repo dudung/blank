@@ -17,3 +17,4 @@ Refs for learning computational thinking topic
 + [`k6bqj`](https://osf.io/k6bqj) Siu-Cheung Kong, Harold Abelson (eds) "Computational Thinking
 Education", Springer, 1st edition, 8 Aug 2019, url https://isbnsearch.org/isbn/9789811365270.
 + [`updhv`](https://osf.io/updhv) Maureen D Neumann, Lisa Dion, "Teaching Computational Thinking: An Integrative Approach for Middle and High School Learning", The MIT Press, 1st edition, 21 Dec 2021, url https://isbnsearch.org/isbn/9780262045056.
++ [`rvapj`](https://osf.io/rvapj) Peter J. Denning, Matti Tedre, "Computational Thinking", The MIT Press, 1st edition, 14 May 2019, url https://isbnsearch.org/isbn/9780262536561.
