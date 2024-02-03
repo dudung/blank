@@ -18,6 +18,7 @@ Rachel Schutt, Cathy O'Neil, "Doing Data Science: Straight Talk from the Frontli
 Sinan Ozdemir, "Principles of Data Science: Learn the techniques and math you need to start making sense of your data", Packt Publishing, 1st edition, 16 Dec 2016, url https://isbnsearch.org/isbn/9781785887918.
 + [`un2wv`](https://osf.io/un2wv)
 Holger Aust, "Das Zeitalter der Daten: Was Sie über Grundlagen, Algorithmen und Anwendungen wissen sollten", Springer, 1st edition, Jan 2021, url https://isbnsearch.org/isbn/9783662623350.
++ []() Francesco Corea, "An Introduction to Data: Everything You Need to Know About AI, Big Data and Data Science", Springer, 1st edition, 2019, url https://isbnsearch.org/isbn/9783030044688.
 
 
 ## python
@@ -31,6 +32,7 @@ Samir Madhavan, "Mastering Python for Data Science", Packt Publishing, 1st editi
 Wes McKinney, "Python for Data Analysis", O'Reilly Media, 1st edition, 13 Nov 2012, url https://isbnsearch.org/isbn/9781449319793.
 + [`v3xfg`](https://osf.io/v3xfg)
 Alberto Boschetti, Luca Massaron, "Python Data Science Essentials", Packt Publishing, 3rd edition, 28 Sep 2018, url https://isbnsearch.org/isbn/9781789537864.
++ [`ra5qt`](https://osf.io/ra5qt) Fabio Nelli, "Python Data Analytics", Apress, 1st edition, 21 Aug 2015, url https://isbnsearch.org/isbn/9781484209592.
 
 
 ## r
@@ -54,4 +56,6 @@ Vijay Kotu, Bala Deshpande, "Data Science: Concepts and Practice", Morgan Kaufma
 + [`mhrk8`](https://osf.io/mhrk8) Lillian Pierson, "Data Science For Dummies", For Dummies, 1st edition, 9 Mar 2015, url https://isbnsearch.org/isbn/9781118841556.
 + [`xwgnr`](https://osf.io/xwgnr)
 Dirk P. Kroese, Zdravko Botev, Thomas Taimre, Radislav Vaisman, "Data Science and Machine Learning: Mathematical and Statistical Methods", Chapman and Hall, 1st edition, 22 Nov 2019, url https://isbnsearch.org/isbn/9781138492530.
-
++ [`q94y2`](https://osf.io/q94y2) Carol Long, Kelly Talbot, Karen Gill (eds), et al. "Data Science and Big Data Analytics: Discovering, Analyzing, Visualizing and Presenting Data", EMC, Wiley, 1st edition, 27 Jan 2015, url https://isbnsearch.org/isbn/9781118876138.
++ [`bjt75`](https://osf.io/bjt75) Bernard Marr "Big Data in Practice: How 45 Successful Companies Used Big Data Analytics to Deliver Extraordinary Results", Wiley, 1st edition, url https://isbnsearch.org/isbn/9781119231387.
++ [`jvpu2`](https://osf.io/jvpu2) David Stephenson, "Big Data Demystified: How to use big data, data science and AI to make better business decisions and gain competitive advantage", FT Publishing International, 1st edition, 12 Feb 2018, url https://isbnsearch.org/isbn/9781292218106.
