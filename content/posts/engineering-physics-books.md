@@ -20,3 +20,8 @@ Books for learning engineering physics.
 ## materials and wave
 + [`jrzdx`](https://osf.io/jrzdx) Uma Mukherji, "Engineering Physics", Alpha Science, 2nd edition, 15 Feb 2006, url https://isbnsearch.org/isbn/9781842652855.
 + [`uzaew`](https://osf.io/uzaew) Shatendra Sharma, Jyotsna Sharma, "Engineering Physics", Pearson India, 1st edition, 2018, url https://isbnsearch.org/isbn/9789386873316.
+
+
+## comprehensive
++ [`cb42w`](https://osf.io/cb42w) Md Nazoor Khan, Simanchala Panigrahi, "Principles of Engineering Physics 1", Cambridge University Press, 1st edition, 6 Mar 2017, url https://isbnsearch.org/isbn/9781316635643.
++ [`qbk94`](https://osf.io/qbk94) Md Nazoor Khan, Simanchala Panigrahi, "Principles of Engineering Physics 2", Cambridge University Press, 1st edition, 6 Mar 2017, url https://isbnsearch.org/isbn/9781316635650.
