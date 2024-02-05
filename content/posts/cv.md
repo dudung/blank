@@ -11,6 +11,7 @@ Evolution of curriculum vitae of me.
 + `20240130` [`e9rdn`](https://osf.io/e9rdn) `doc` `fi-wd-r-p2mi`
 + `20240130` [`t4dfu`](https://osf.io/t4dfu) `doc` `fi-ag-r-p2mi`
 + `20240129` [`qbfy9`](https://osf.io/qbfy9) `doc` `as-ia-r-p2mi`
++ `20240125` []() `` `fi-rk-r-rki`
 + `20240125` [`tw3c2`](https://osf.io/tw3c2) `doc` `fi-td-p-ppnn`
 + `20240125` [`sa5e2`](https://osf.io/sa5e2) `doc` `ma-um-r-p2mi`
 + `20240122` [`6es4a`](https://osf.io/6es4a) `doc` `fi-mm-r-itb`
