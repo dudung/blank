@@ -1,10 +1,10 @@
 +++
-title = 'Courses 2023-1'
+title = 'Courses 2023-2'
 date = 2024-02-03T18:01:44+07:00
 draft = false
 tags = ['courses']
 +++
-List of courses on 2023-1 semester.
+List of courses on 2023-2 semester.
 <!--more-->
 
 
